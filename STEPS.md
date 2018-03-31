@@ -6,10 +6,12 @@
 
 ## 3. [Setup environment variables](./steps/3.SetupEnvironmentVariables.md)
 
-## 4. Install and tastefully import Bootstrap
+## 4. [Encapsulate UI code in an /app folder](./steps/4.EncapsulateUIcodeInAnAppFolder)
 
-## 5. Routing
+## 5. Install and tastefully import Bootstrap
 
-## 6. Setup Redux
+## 6. Routing
 
-## 7. Todo App
+## 7. Setup Redux
+
+## 8. Todo App
