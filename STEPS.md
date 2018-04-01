@@ -8,7 +8,7 @@
 
 ## 4. [Encapsulate UI code in an /app folder](./steps/4.EncapsulateUIcodeInAnAppFolder)
 
-## 5. Install and tastefully import Bootstrap
+## 5. [Install and Import Bootstrap](./steps/5.InstallAndImportBootstrap.md)
 
 ## 6. Routing
 
