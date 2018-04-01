@@ -10,7 +10,7 @@
 
 ## 5. [Install and Import Bootstrap](./steps/5.InstallAndImportBootstrap.md)
 
-## 6. Routing
+## 6. [Routing](./steps/6.Routing.md)
 
 ## 7. Setup Redux
 
