@@ -5,13 +5,16 @@ import {
 } from 'redux';
 
 import { counterActions, counterReducers } from './counter';
+import { todoListActions, todoListReducers } from './todo-list';
 
 export const actions = {
-  counterActions
+  counterActions,
+  todoListActions
 }
 
 export const reducers = combineReducers({
   counter: counterReducers,
+  todoList: todoListReducers
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
