@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const TodoList = ({ todoList, toggleTodo }) => {
 
@@ -17,7 +18,7 @@ const TodoList = ({ todoList, toggleTodo }) => {
                         checked={obj.done}
                         onChange={ e => handleToDoCheckBoxChange(e, i) }
                     />
-                    {obj.name}
+                    <Link to={`/todo/${i}`}>{obj.name}</Link>
                 </li>)
             )}
         </ul>
