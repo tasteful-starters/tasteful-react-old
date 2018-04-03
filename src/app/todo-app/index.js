@@ -1,18 +1,16 @@
-import { connect } from 'react-redux';
+import React from "react";
 
-import { actions } from '@state';
-import ToDoApp from './presentational';
+import TodoList from './todo-list';
+import TodoAdder from './todo-adder';
 
-const mapStateToProps = (state, ownProps) => ({
-    todoList: state.todoList,
-});
+const TodoApp = () => (
+    <div>
+        <h1>ToDo works!</h1>
 
-const mapDispatchToProps = {
-    addTodo: actions.todoListActions.AddTodo,
-    toggleTodo: actions.todoListActions.ToggleTodo
-};
+        <TodoAdder />
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(ToDoApp);
+        <TodoList />
+    </div>
+);
+
+export default TodoApp;
