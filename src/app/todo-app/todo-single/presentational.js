@@ -9,7 +9,7 @@ const TodoSingle = ({ todoList, toggleTodo, match }) => {
 
     return (
         <div> 
-            <h1>TodoSingle works!</h1>
+            <h1>TodoSingle works! - {match.params.id}</h1>
             <ul>
                 {todoList
                     .filter((obj, i) => i == match.params.id)
