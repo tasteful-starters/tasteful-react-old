@@ -4,7 +4,7 @@ import {
   createStore
 } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import { all } from 'redux-saga/effects';
+import { all, call } from 'redux-saga/effects';
 
 import { counterActions, counterReducers, counterSagas } from './counter';
 import { todoListActions, todoListReducers } from './todo-list';
@@ -27,7 +27,7 @@ export function configureStore(initialState = {}) {
 
   function* rootSaga() {
     yield all([
-      ...counterSagas
+      call(counterSagas)
     ])
   }
   sagaMiddleware.run(rootSaga);
